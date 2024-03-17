@@ -18,19 +18,20 @@ Protected Internal (İçsel Korunumlu)
 Protected internal olarak tanımlanmış değer, tanımlandığı class’ın içinden ve ondan türetilen sınıfların içinden erişilebilir durumdadır. Türetilen sınıfın aynı program içinde olmaması sorun teşkil etmez.
  */
 
-Console.WriteLine("İlk sayıyı gir: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("İlk sayıyı gir: ");
+//int number1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("İkinci sayıyı gir: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("İkinci sayıyı gir: ");
+//int number2 = Convert.ToInt32(Console.ReadLine());
 
-int sumOfNumber = CalculateSum(number1, number2);
+//int sumOfNumber = CalculateSum(number1, number2);
 
-static int CalculateSum(int number1,int number2)
-{
-    return number1 + number2;
-}
-Console.WriteLine(sumOfNumber);
+//static int CalculateSum(int number1,int number2)
+//{
+//    return number1 + number2;
+//}
+//Console.WriteLine(sumOfNumber);
+
 
 
 //İsim ve soyismi kullanıcıdan alıp fonksiyona parametre olarak
@@ -47,3 +48,22 @@ Console.WriteLine(sumOfNumber);
 //    Console.WriteLine("İsim : " + ad + "\nSoyisim : " + soyad);
 //}
 
+Console.WriteLine("Kısa kenarı girin: ");
+int kisaKenar = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Uzun kenarı girin: ");
+int uzunKenar = Convert.ToInt32(Console.ReadLine());
+
+
+int alan = alanHesapla(kisaKenar, uzunKenar);
+int cevre = cevreHesapla(kisaKenar, uzunKenar);
+
+static int cevreHesapla(int kisaKenar, int uzunKenar)
+{
+    return 2 * (kisaKenar + uzunKenar);
+}
+
+static int alanHesapla(int kisaKenar, int uzunKenar)
+{
+    return kisaKenar * uzunKenar;
+}
