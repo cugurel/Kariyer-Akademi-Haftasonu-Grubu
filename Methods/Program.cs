@@ -26,11 +26,15 @@ Protected internal olarak tanımlanmış değer, tanımlandığı class’ın i�
 
 //int sum = number + number1;
 
-static void MyMethod()
+Console.WriteLine("İsim : ");
+string ad = Console.ReadLine();
+
+Console.WriteLine("Soyisim : ");
+string soyad = Console.ReadLine();
+
+void ShowNameAndSurname(string ad, string soyad)
 {
-    Console.WriteLine("I just got executed!");
+    Console.WriteLine("İsim : " + ad + "\nSoyisim : "+soyad);
 }
 
-
-MyMethod();
-
+ShowNameAndSurname(ad, soyad);
