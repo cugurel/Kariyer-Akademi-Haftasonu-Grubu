@@ -18,13 +18,20 @@ Protected Internal (İçsel Korunumlu)
 Protected internal olarak tanımlanmış değer, tanımlandığı class’ın içinden ve ondan türetilen sınıfların içinden erişilebilir durumdadır. Türetilen sınıfın aynı program içinde olmaması sorun teşkil etmez.
  */
 
-//Console.WriteLine("İlk sayıyı gir: ");
-//int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("İlk sayıyı gir: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
 
-//Console.WriteLine("İlk sayıyı gir: ");
-//int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("İkinci sayıyı gir: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-//int sum = number + number1;
+int sumOfNumber = CalculateSum(number1, number2);
+
+static int CalculateSum(int number1,int number2)
+{
+    return number1 + number2;
+}
+Console.WriteLine(sumOfNumber);
+
 
 //İsim ve soyismi kullanıcıdan alıp fonksiyona parametre olarak
 //gönderen ve yazdıran program
@@ -32,13 +39,11 @@ Protected internal olarak tanımlanmış değer, tanımlandığı class’ın i�
 //Console.WriteLine("İsim : ");
 //string ad = Console.ReadLine();
 
-//Console.WriteLine("Soyisim : ");
-//string soyad = Console.ReadLine();
 
-//ShowNameAndSurname(ad, soyad);
+//ShowNameAndSurname(ad);
 
-//static void ShowNameAndSurname(string ad, string soyad)
+//static void ShowNameAndSurname(string ad, string soyad = "Uğurel")
 //{
-//    Console.WriteLine("İsim : " + ad + "\nSoyisim : "+soyad);
+//    Console.WriteLine("İsim : " + ad + "\nSoyisim : " + soyad);
 //}
 
