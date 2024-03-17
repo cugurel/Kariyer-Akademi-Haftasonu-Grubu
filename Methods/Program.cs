@@ -67,3 +67,6 @@ static int alanHesapla(int kisaKenar, int uzunKenar)
 {
     return kisaKenar * uzunKenar;
 }
+
+Console.WriteLine("Alan = " + alan);
+Console.WriteLine("Çevre = " + cevre);
