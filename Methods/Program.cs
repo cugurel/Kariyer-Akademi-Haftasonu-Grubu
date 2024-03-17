@@ -26,15 +26,19 @@ Protected internal olarak tanımlanmış değer, tanımlandığı class’ın i�
 
 //int sum = number + number1;
 
-Console.WriteLine("İsim : ");
-string ad = Console.ReadLine();
+//İsim ve soyismi kullanıcıdan alıp fonksiyona parametre olarak
+//gönderen ve yazdıran program
 
-Console.WriteLine("Soyisim : ");
-string soyad = Console.ReadLine();
+//Console.WriteLine("İsim : ");
+//string ad = Console.ReadLine();
 
-void ShowNameAndSurname(string ad, string soyad)
-{
-    Console.WriteLine("İsim : " + ad + "\nSoyisim : "+soyad);
-}
+//Console.WriteLine("Soyisim : ");
+//string soyad = Console.ReadLine();
 
-ShowNameAndSurname(ad, soyad);
+//ShowNameAndSurname(ad, soyad);
+
+//static void ShowNameAndSurname(string ad, string soyad)
+//{
+//    Console.WriteLine("İsim : " + ad + "\nSoyisim : "+soyad);
+//}
+
