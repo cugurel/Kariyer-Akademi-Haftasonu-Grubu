@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceExample
 {
-    public interface ICarService:IGenericService<Car>
+    public interface IEmployeeService:IGenericService<Employee>
     {
     }
 }

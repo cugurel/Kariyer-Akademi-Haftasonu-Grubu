@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace InterfaceExample
 {
-    public class CarManager : ICarService
+    public class CustomerManager : ICustomerService
     {
-        
+        public void TAdd(Customer t)
+        {
+            Console.WriteLine(t.Name + " eklendi");
+        }
 
-        public void TAdd(Car t)
+        public void TDelete(Customer t)
         {
             throw new NotImplementedException();
         }
 
-        public void TDelete(Car t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void TUpdate(Car t)
+        public void TUpdate(Customer t)
         {
             throw new NotImplementedException();
         }
