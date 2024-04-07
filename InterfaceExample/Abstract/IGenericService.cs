@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceExample
+namespace InterfaceExample.Abstract
 {
     public interface IGenericService<T> where T : class, new()
     {

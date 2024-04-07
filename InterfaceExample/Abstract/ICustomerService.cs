@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceExample.Concrete;
 
-namespace InterfaceExample
+namespace InterfaceExample.Abstract
 {
-    public interface IEmployeeService:IGenericService<Employee>
+    public interface ICustomerService : IGenericService<Customer>
     {
+
     }
 }

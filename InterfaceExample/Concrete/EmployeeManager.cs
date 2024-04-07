@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceExample.Abstract;
 
-namespace InterfaceExample
+namespace InterfaceExample.Concrete
 {
     public class EmployeeManager : IEmployeeService
     {

@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceExample.Abstract;
 
-namespace InterfaceExample
+namespace InterfaceExample.Concrete
 {
-    public class CustomerManager : ICustomerService
+    public class LogManager : ILogService
     {
-        public void TAdd(Customer t)
+        public void TAdd(Log t)
         {
-            Console.WriteLine(t.Name + " eklendi");
+            Console.WriteLine(t.Username + " " + t.Process);
         }
 
-        public void TDelete(Customer t)
+        public void TDelete(Log t)
         {
             throw new NotImplementedException();
         }
 
-        public void TUpdate(Customer t)
+        public void TUpdate(Log t)
         {
             throw new NotImplementedException();
         }

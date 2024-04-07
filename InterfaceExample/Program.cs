@@ -1,4 +1,4 @@
-﻿using InterfaceExample;
+﻿using InterfaceExample.Concrete;
 
 Car car = new Car();
 car.Id = 1;
@@ -15,9 +15,18 @@ customer.Surname = "Uğurel";
 customer.City = "İzmir";
 customer.Town = "Bayraklı";
 
+Log log = new Log();
+log.Id = 1;
+log.Username = "cagri";
+log.Process = "Login Başarılı";
+log.Status = 1;
+log.Date = DateTime.Now;
 
-CarManager cm = new CarManager();
-cm.TAdd(car);
+LogManager lm = new LogManager();
+lm.TAdd(log);
 
-CustomerManager customerManager = new CustomerManager();
-customerManager.TAdd(customer);
+//CarManager cm = new CarManager();
+//cm.TAdd(car);
+
+//CustomerManager customerManager = new CustomerManager();
+//customerManager.TAdd(customer);

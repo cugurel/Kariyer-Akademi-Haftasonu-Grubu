@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceExample.Concrete;
 
-namespace InterfaceExample
+namespace InterfaceExample.Abstract
 {
-    public class Employee
+    public interface ICarService : IGenericService<Car>
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+
     }
 }
